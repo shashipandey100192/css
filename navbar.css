@@ -1,0 +1,76 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.navbar
+{
+    width: 1200px;
+    height: auto;
+    background:orange;
+    display: flex;
+    align-items: center;
+}
+.navbar section
+{
+    flex:1;
+    /* border:1px solid red; */
+    padding:10px;
+}
+.navbar h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: arial black;
+    background-image:url('https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    color:transparent;
+    background-clip: text;
+}
+.navbar ul
+{
+    list-style-type: none;
+    display: flex;
+    height: 50px;
+}
+.navbar ul li
+{
+    flex:1;
+    /* border:1px solid red; */
+    text-align: center;
+}
+.navbar a
+{
+    color:white;
+    text-decoration: none;
+    /* background-color: rgb(0, 79, 53); */
+    width: 100%;
+    float:left;
+    height: 50px;
+    line-height: 50px;
+}
+.navbar a:hover
+{
+    background-color: rgb(0, 43, 43);
+    animation:moveing 500ms alternate infinite;
+}
+.navbar section:last-child
+{
+    text-align: right;
+}
+
+
+
+.mylogo
+{
+    width: 50px;
+    animation-name: moveing;
+    animation-duration:500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveing {
+    from{}
+    to{ transform: scale(1.1,1.1);}
+}

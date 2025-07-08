@@ -1,0 +1,100 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.comon {
+    width: 1200px;
+    min-height: 200px;
+    max-height: fit-content;
+    border: 1px solid red;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.first p {
+    text-align: justify;
+    font-size: 20px;
+    background: linear-gradient(red, green, orange);
+    color: transparent;
+    background-clip: text;
+}
+
+.second img {
+    width: 300px;
+    /* filter: blur(2px); */
+    filter: contrast(150%) brightness(2) invert(100%);
+}
+
+/* 
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%) */
+
+.third {
+    min-height: 400px;
+    background-color: aquamarine;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* clip-path: polygon(0px 0px, 1200px 0px,1200px 300px,600px 400px,0px 300px); */
+    clip-path: polygon(49% 11%, 100% 0, 100% 100%, 51% 88%, 0 100%, 0 0);
+
+}
+.fourth
+{
+     text-align: left;
+}
+
+.fourth ul {
+    list-style-type: none;
+}
+
+.fourth ul li::before {
+    /* content: "this"; */
+    content: "\2614";
+    color: red;
+    margin-right: 10px;
+}
+.fourth ul li::after
+{
+    content: "________________________";
+    color:green;
+}
+
+.tooltip
+{
+    background-color: orangered;
+    color:white;
+    width:500px;
+    height: 50px;
+    padding:20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left:50px;
+    display: none;
+}
+.tooltip::before
+{
+    content: "";
+    border-left:0px solid transparent;
+    border-right:20px solid orangered;
+    border-top:20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    margin-left: -30px;
+
+
+}
+
+input:checked + .tooltip
+{
+    display: inline-block;
+}
