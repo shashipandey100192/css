@@ -1,0 +1,56 @@
+/* *
+{
+    margin:0 auto;
+    padding:0;
+} */
+
+main
+{
+    width:1200px;
+    height: auto;
+    border:1px solid red;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 80px 300px 300px 200px auto 500px auto;
+    margin:0 auto;
+    padding:0;
+}
+main div
+{
+    border:1px solid blue;
+    padding:10px;
+    margin:5px;
+}
+main div:nth-child(1),main div:nth-child(5),main div:nth-child(6)
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aquamarine;
+}
+main div:nth-child(2)
+{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: aquamarine;
+}
+.box
+{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+   
+}
+
+
+.box:hover{
+     animation:abc 1s infinite alternate linear;
+}
+
+
+@keyframes abc {
+    from{}
+    to{
+        clip-path: polygon(0 57%, 44% 74%, 100% 0, 100% 35%, 51% 100%, 0 86%);
+    }
+}

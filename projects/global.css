@@ -1,0 +1,50 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+body
+{
+    background-color: antiquewhite;
+}
+
+.row
+{
+    width: 1200px;
+    height: auto;
+    border:1px solid red;
+    display: flex;
+}
+.row section
+{
+    flex:1;
+    border:1px solid red;
+    margin:5px;
+    padding:5px;
+}
+.row img
+{
+    width: 100%;
+}
+
+.logo
+{
+    width: 200px;
+    display: none;
+}
+header,footer{
+    width:100%;
+    height: 50px;
+    background-color: black;
+    color:white;
+    display: none;
+}
+.watermark
+{
+    font-size: 80px;
+    color:white;
+    font-family: arial black;
+    text-transform: uppercase;
+    display: none;
+}

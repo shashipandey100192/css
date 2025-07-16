@@ -1,0 +1,62 @@
+
+@media print{
+
+    @page
+    {
+        size: A4 portrait;
+        /* margin:10px; */
+    }
+    .logo
+    {
+        display: block;
+    }
+    .row
+    {
+        display: block;
+        border:none;
+    }
+    .row section
+    {
+        border:none;
+        page-break-after: always;
+        margin-top:80px;
+    }
+    .hide1
+    {
+        display: block;
+    }
+    body
+    {
+        background-color: transparent;
+    }
+    header,footer
+    {
+        display: block;
+        position: fixed;
+        text-align: center;
+        line-height: 50px;
+    }
+    header
+    {
+        top:0;
+    }
+    footer
+    {
+        bottom: 0;
+    }
+    .row img
+    {
+        filter: blur(2px);
+    }
+    .watermark
+    {
+        position: fixed;
+        color:red;
+        display: block;
+        transform: rotate(-45deg);
+        margin-top:300px;
+        z-index: 5;
+        opacity: 0.2;
+    }
+
+}
