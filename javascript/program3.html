@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="button" value="run func" onclick="first()">
+<p1>this is text</p1>
+
+<!-- <p onclick="abc()">click here</p> -->
+
+    <script>
+        function first()
+        {
+            alert(5000);
+            second();
+        }
+
+        function second()
+        {
+            console.log("this is second");
+            third()
+        }
+
+
+        function third()
+        {
+            document.write("this is web page");
+        }
+
+
+function abc()
+{
+    var first,second,third;
+        // first = prompt("enter first no",81);
+        // second = prompt("enter second no",60);
+
+        //  first = eval(prompt("enter first no",81));
+        // second = eval(prompt("enter second no",60));
+
+         first = parseFloat(prompt("enter first no",81));
+        second = parseFloat(prompt("enter second no",60));
+
+
+        third = first+second;
+        console.log(third);
+        console.log(typeof(first));
+}
+
+abc();
+
+// window.onload(function(){
+//     abc()
+// })
+
+
+// window.onload = function(){
+//     abc();
+// }
+
+    </script>
+    
+</body>
+</html>

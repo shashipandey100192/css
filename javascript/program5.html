@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>this is text</p>
+<p class="one">this is text</p>
+<p>this is text</p>
+<p>this is text</p>
+<p>this is text</p>
+<div class="one">this is div</div>
+<h5>heading four</h5>
+<h5 class="one">heading four</h5>
+<h5>heading four</h5>
+<h5 id="two">heading four</h5>
+<p onclick="first()">sjkdfhjksdhf</p>
+
+
+<script>
+
+    // var a =document.getElementById('two');
+    // var a = document.getElementsByClassName('one');
+    // var a = document.getElementsByTagName('p');
+    // var a = document.querySelector('.one,#two,p,div');
+    var a = document.querySelectorAll('.one,#two,p,div');
+
+    console.log(a);
+    console.log(typeof(a));
+
+
+function first()
+{
+    alert("welcome to javascript");
+}
+
+
+a[5].addEventListener("click",first);
+
+
+a[0].addEventListener("click",function(){
+    alert("this is ano function in javascript");
+});
+
+a[1].addEventListener("click",()=>{
+    alert("this is arrow function in javascript");
+});
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>

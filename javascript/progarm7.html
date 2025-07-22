@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first
+        {
+            text-transform: uppercase;
+            color:green;
+            background-color: aqua;
+            text-align: center;
+            font-size: 50px;
+        }
+        .second
+        {
+            letter-spacing: 10px;
+        }
+        .third
+        {
+            text-shadow: 2px 5px 20px black;
+        }
+        .fourth
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="color:red">this is heading one</h1>
+<h1>this is heading one</h1>
+<h1>this is heading one</h1>
+<h1>this is heading one</h1>
+<h1>this is heading one</h1>
+
+
+
+
+
+<script>
+    var allheading = document.querySelectorAll('h1');
+    
+        allheading[1].addEventListener("click",()=>{
+            allheading[1].style.color="red";
+            // allheading[1].style.backgroundColor="blue";
+            // allheading[1].style.fontSize="50px";
+            // allheading[1].style.textTransform="uppercase";
+        });
+
+        allheading[2].addEventListener("click",()=>{
+            allheading[2].className="first";
+        })
+
+
+        allheading[3].addEventListener("click",()=>{
+            allheading[3].classList.add("first","second","third","fourth");
+        })
+
+        allheading[3].addEventListener("dblclick",()=>{
+            allheading[3].classList.remove("second","third","fourth");
+        })
+
+         allheading[4].addEventListener("click",()=>{
+            allheading[4].classList.toggle("first");
+        })
+
+
+
+
+</script>
+    
+</body>
+</html>

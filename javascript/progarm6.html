@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="password">
+<input type="button" value="show">
+
+
+
+
+<script>
+    var allinput = document.querySelectorAll("input");
+    console.log(allinput);
+
+    var a = 1;
+    allinput[1].addEventListener("click",()=>{
+    //    allinput[0].setAttribute("type","text");
+    //    allinput[0].setAttribute("title","enter password here");
+        if(a==1)
+    {
+            allinput[0].setAttribute("type","text");
+            allinput[1].setAttribute("value","hide");
+            allinput[0].setAttribute("disabled","disabled");
+            a++;
+    }
+    else
+    {
+         allinput[0].setAttribute("type","password");
+          allinput[1].setAttribute("value","show");
+          allinput[0].removeAttribute("disabled");
+        a=1
+    }
+
+    })
+</script>
+    
+</body>
+</html>
